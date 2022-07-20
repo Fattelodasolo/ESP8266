@@ -39,7 +39,7 @@ char szMesg[MAX_MESG+1] = "";
 
 char daysOfTheWeek[7][12] = {"Domenica", "Lunedi", "Martedi", "Mercoledi", "Giovedi", "Venerdi", "Sabato"};
 
-String months[12]={"Gennaio", "Febbraio", "Marzo", "Aprile", "Maggio", "Giugno", "Luglio", "Agostot", "Settembre", "Ottobre", "Novembre", "Dicembre"};
+String months[12]={"Gennaio", "Febbraio", "Marzo", "Aprile", "Maggio", "Giugno", "Luglio", "Agosto", "Settembre", "Ottobre", "Novembre", "Dicembre"};
 
 void getTime(char *psz, bool f = true){
   s = timeClient.getSeconds();
