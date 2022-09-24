@@ -13,7 +13,7 @@ const char *password = "xxxxxxxxxxxxxx";
 const long utcOffsetInSeconds = 7200;
 
 WiFiUDP ntpUDP;
-NTPClient timeClient(ntpUDP, "europe.pool.ntp.org", utcOffsetInSeconds);
+NTPClient timeClient(ntpUDP, "europe.pool.ntp.org", utcOffsetInSeconds, 60000);
 
 int  h, m, s;
 int yy, mm, dd;
