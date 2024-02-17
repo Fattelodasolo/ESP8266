@@ -11,7 +11,7 @@ const char* ssid = "XXXXXXXX";
 const char* password =  "xxxxxxxxx";
 const char* mqtt_server = "xxx.xxx.xxx.xxx";
 const int mqtt_server_port = 1883;
-const char* mqttUser = "homeassistant";
+const char* mqttUser = "xxxxxxxxxx";
 const char* mqttPassword = "xxxxxxxxxxxxxxxxxxxx";
 
 WiFiClient wifiClient;
