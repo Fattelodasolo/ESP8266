@@ -1,0 +1,17 @@
+alias: Invio Lolin MQTT
+description: ""
+trigger:
+  - platform: state
+    entity_id:
+      - sensor.sonoff_1002263197_power
+condition: []
+action:
+  - service: mqtt.publish
+    data:
+      topic: home/lolin
+      payload: >-
+        Power {{ states("sensor.sonoff_1002263197_power") }} , EnergyD {{
+        states("sensor.sonoff_1002263197_energy_day") }} , EnergyM {{
+        states("sensor.sonoff_1002263197_energy_month") }} , CO2 {{
+        states("sensor.co2_fotovoltaico") }}
+mode: single

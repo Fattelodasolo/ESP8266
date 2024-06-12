@@ -1,0 +1,7 @@
+sensor:
+  - platform: template
+    sensors:
+      co2_fotovoltaico:
+        friendly_name: "CO2 non emessa"
+        unit_of_measurement: "kg"
+        value_template: "{{ states('sensor.fotovoltaico') | float * 0.53 }}"
